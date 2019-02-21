@@ -78,3 +78,11 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+#====Custom====#
+
+# Netlify deployment from local
+.netlify
+
+# Build
+**/*/dist

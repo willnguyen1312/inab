@@ -1,1 +1,1 @@
-export const VOILA = 'Nam Nguyen - 13121992';
+export const VOILA = 'nam.nguyen.node@gmail.com';
