@@ -14,17 +14,15 @@
     "@types/node": "^11.9.4",
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.2",
-    "@types/webpack-env": "^1.13.7"
+    "@types/webpack-env": "^1.13.7",
+    "cross-env": "^5.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:ci": "CI=true react-scripts test",
+    "start": "cross-env NODE_PATH=./src react-scripts start",
+    "build": "cross-env NODE_PATH=./src react-scripts build",
+    "test": "cross-env NODE_PATH=./src react-scripts test",
+    "test:ci": "cross-env CI=true NODE_PATH=./src react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
