@@ -2,9 +2,9 @@
   "name": "inab",
   "private": true,
   "scripts": {
-    "postinstall": "./postinstall.sh",
     "build:web": "lerna run build --scope={@inab/common,@inab/web}",
-    "build:server": "lerna run build --scope={@inab/common,@inab/server}"
+    "build:server": "lerna run build --scope={@inab/common,@inab/server}",
+    "heroku-postbuild": "yarn build:server"
   },
   "workspaces": {
     "packages": [
