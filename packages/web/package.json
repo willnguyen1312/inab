@@ -1,0 +1,35 @@
+{
+  "name": "@inab/web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@inab/common": "1.0.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "^2.1.5",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.4",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "@types/webpack-env": "^1.13.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
